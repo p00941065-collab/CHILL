@@ -1,0 +1,5 @@
+Patterns->
+1->Most of patterns are printed with nested loops
+2->For the inner loop,focus on the columns & connect them somehow to rows
+3->Print then inside the inner for loop
+4->Observe symmetry(Optional)
