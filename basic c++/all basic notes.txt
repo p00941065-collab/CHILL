@@ -1,0 +1,468 @@
+Skealton of C++ code ->#include->it tells library 
+#include<iostream>->including library(iostream contains standared objects,,core stream classes and types,,common stream manipulators)
+#include<math.h>->contains mathematical functions
+#includue<string> ->if we wanna use string
+This is how a c++ Skealton
+#include<iostream>
+
+int main() {
+    std::cout<<"hey"              Common Uses of std::Input and Output: std::cout, std::cin, and std::endl for printing text and reading user input.Data Structures: std::string, std::vector, std::map, and std::pair for managing texts and collections of data.Algorithms and Math: std::sort, std::max, std::min, and std::abs for processing data.Utilities: std::move, std::pair, std::function, and smart pointers like std::unique_ptr
+    return 0; 
+     
+}     
+     
+     output->hey
+    Key Components
+
+int: Indicates that the function returns an integer value to the operating system upon completion. Returning 0 typically signals that the program executed successfully, while a non-zero value indicates an error or abnormal termination.
+
+main: The required name designated by the C++ standard for the starting function. Every standard C++ program must have exactly one main function.
+
+(): Contains the parameter list. Empty parentheses mean the function takes no command-line arguments. To handle command-line inputs, it can be written as int main(int argc, char* argv[]).
+
+{}: Encloses the body of the function where your program's instructions are written and executed sequentially.
+   
+****PRINTING STUFF*****
+
+#include<iostream>
+
+int main() {
+    std::cout<<"hey"<<"hey";
+    return 0;
+
+}     
+    REMEMBER->In C++, whitespace (spaces, tabs, and newlines) between operators and string literals is ignored by the compiler. Both of these lines behave identically and will print
+
+    output->hey hey
+
+    #include <iostream>
+
+    int main() {
+        std::cout<<"hey"<<std::endl;
+        std::cout<<"hey";
+        return 0; 
+
+        output->  hey
+                  hey
+
+    }     
+
+    writing std is quite annoying right,,thats why we can use
+
+    "using namespace std""
+    example->
+
+    #include<iostream>
+    using namespace std;
+    
+    int main() {
+
+        cout<<"hey"<<endl<<"yo";
+        return 0;
+    }
+    output->
+           hey
+           yo
+
+****TAKING INPUT*****
+
+   #include<iostream>
+   using namespace std;
+
+   int main () {
+       out<<"enter any number";
+       int x;
+       cin>>x;
+       cout<<x<<endl<<"yo";
+       return 0; 
+   }
+  output->enter any number44
+44
+yo
+YOU CAN GIVE 2 VARIABLES AS INPUT (check basic4)
+
+******Inclusion of all Library in C++******
+ #include<bits/std>
+ using namespace std; {this includes nearly every library in C++}
+
+ to write a line of code that willl be not executed is //
+ eg ->//hello yaar
+ eg->//we write cin>> and cout<< {like this}
+
+ ******** DATA types*********
+ TYPE    BYTES     RANGE 
+ unsinged short 2   0 to 65,535
+ int        4        -2,147,483,648 to 2,147,483,647
+ long       4         -2,147,483,648 to 2,147,483,647
+ long long  8         -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+ float      4         1.2E-38 to 3.4E+38
+ long double 10       3.4E-4932 to 1.1E+4932
+ double      8        -32,768 to 32,767
+ bool        1        a boolen value
+ char        1        letters,digits,punctuation marks and control characters
+ string      1/character   zero or more cara or sequence of characters
+***********USING DATA TYPES***************{REFER BASIC 6}
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string x;
+    string y;
+    cin>>x>>y;
+    cout<<x<<" "<<y;
+    return 0;
+
+
+
+}
+ ***** IMPORTANT LESSON-> C++ ONLY CONSIDERS THINGS WITH NO "SPACE",,IF WE NEED SPACE IN OUR OUTPUT THEN WE HAVE TO ASSIGN NEW VARIABLES TO THE WORDS
+
+ ***************************GETLINE FUNCTION***************************
+ {REFER TO BASIC 7}
+
+ #include <bits/stdc++.h>
+ using namespace std;
+
+ int main() {
+    string x;
+    getline(cin,x);
+    cout<<x;
+    
+    return 0;
+
+ }
+IMPORTANT NOTE->> IT IS ONLY USED FOR PRINTING THE STRIMGS WITH SPACE IN A SINGLE LINE
+
+HEY
+hello
+IMPORTANT
+to get our the stuff fromm different lines in our string variable we have to strickely use data type charr
+
+************IF ELSE STATEMENT***************{refer to basic 8}
+QUESTION->>>>  WRITE A PROGRAM THAT TAKES AN INPUT OF AGE
+               AND PRINTS IF YOU A ADULT OR NOT......
+ #include<bits/stdc++.h>
+ using namespace std;
+
+ int main() {
+    cout<<"tell me your age son";
+    int age;
+    
+    cin>>age;
+    if(age>=18) {
+        cout<<"goood to go";
+        
+ }
+  else{
+    cout<<"nope";
+  }
+  return 0;
+}
+
+QUESTION->>>
+            A school has following rules for grading system
+            a. Below 25-F
+            b.25-44->E
+            c.45-59->D
+            d.
+            e.60-79->B
+            d.80-100->A
+
+ ***********************   SWTICH STATEMENTS*************************{REFER TO BASIC 9}
+Its kind of a shortcut for "if" statement ,,we can assign case 1,case 2, case 3.....so on to out string 
+
+************WHAT ARE ARRAYS,STRINGS?****************                   
+1. Arrays{refer to basic10}
+
+Definition: An array is a collection of elements of the same data type stored in contiguous memory locations.
+IMAGINE ARRAY AS A COLLECTION OF BOXES,,IF NUMBER OF BOXES ARE N THEN FIRST BOX WILL BE ALWAYS BE POSITINED AS 0 AND THE LAST BOX WILL BE POSITINED AS N-1 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int arr[5];
+    cin>>arr[0]>>arr[1]>>arr[2]>>arr[3]>>arr[4];
+    cout<<arr[3];
+    return 0;
+
+
+}
+
+OUTPUT-> 1
+         2
+         3
+         4
+         5
+         3
+
+
+2D array->SIMILAR TO MATRIX,,It have boxes in horizonal and in vertical
+the horizontal position is denoted by i and of vertical position is denoted by j{not in programming,just for notes}
+
+A BASIC CODE WITH A 2D array {refer to basic11}
+
+STRINGS************************
+
+THIS DATA TYPE STORES EVERY CHARACTER IN SEPRATE INDEX
+
+FOR EXAMPLE-> 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s="priyanshu";
+    cout<<s[2];
+    return 0;
+}
+
+OUTPUT->r
+size(){refer to basic 12}  If a is a std::string: Yes, a.size() (or a.length()) returns the number of characters in the string.
+we are going to proof that similar to arrays,strings also stores the characters of strings in indexes starting from 0 to n-1....
+{refer to basic 12}
+LITTLE BIT ABOUT size()
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string x="apple";3
+    int y=x.size();
+    cout<<y;
+    return 0;
+
+}
+OUTPUT->5
+
+*********LOOPS*********
+ suppose we wanna print "PRIYANSHU" five times,,
+
+ #include<bits/stdc++.h>
+ using namespace std;
+  int mains() {
+    cout<<"PRIYANSHU";
+    cout<<"PRIYANSHU";
+    cout<<"PRIYANSHU";
+    cout<<"PRIYANSHU";
+    cout<<"PRIYANSHU";
+
+    return 0;
+
+  }
+
+  but if we wanna print it 500 times,,this process is quite long,,thats why we have to use loops
+   FOR LOOP
+
+SKELETON FOR THIS LOOP
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int i;    
+    for(i=1;i<=5;i=i+1) {
+     cout<<"PRIYANSHU"<<i<<endl;
+
+    }
+    return 0;
+}
+WHILE LOOP
+
+SKELETON OF THIS LOOP
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    
+    while(i<=5) {
+    i1;
+    cout<<"yo";
+    }
+    return 0;
+}
+
+DO WHILE LOOP**********
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+
+int i=2;
+do {
+    cout<<"pd"<<i<<endl;
+    i=i+1;
+}
+while(i<=10);
+cout<<i<<endl;
+
+return 0;
+
+
+}
+In C++, a do-while loop works in two steps:
+
+Execute First: It always runs the code inside the { ... } block once, without checking any condition at all.
+
+Check Second: Only after running that block does it evaluate the condition in while(...). If the condition is true, it repeats the loop; if false, it stops.
+
+So for i = 11:
+
+It ignores while(i <= 10) on the very first pass and prints pd11.
+
+It does not ignore while(i <= 10) after that—it checks 12 <= 10, finds it false, and stops the loop from running a second time.
+
+IMPT->DO IGNORES THE CONDITION GIVEN BY WHILE IN FIRST RUN BUT DOESNT IGNORES IN SECOND RUN ,,DO EXECUTES ITSELF FIRST THEN READS THE CONDITION GIVEN TO WHILE
+
+FUNCTIONS(PASS BY REFERENCE ){refer to basic 14}
+
+FUNCTIONS ARE SET OF CODE WHICH PERFORMS SOMETHING FOR YOU
+
+FUNCTIONS ARE USED TO MODULARISE CODE
+
+FUNCTIONS ARE USED TO INCREASE READABILITY
+
+FUNCTIONS ARE USED TO USE SAME CODE MULTIPLE TIMES
+
+
+***********VOID FUNCTION*************
+LOOK AT THE FOLLOWING CODE CLOSLY {THIS VOID DOESNT GIVE ANY OUTPUT BUT IT HAVE AN IMPORTANT USE,,LOOK }
+ 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void naamlikh() {
+    cout<<"okie my name is pd";
+}
+
+int main() {
+    naamlikh();
+    
+    return 0;
+}
+  OUTOUT->  okie my name is pd
+
+GIVING VOID PARAMETERS
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Pass by reference (&) lets cin directly update 'naam' in main()
+
+void namelikh(string naam) {  
+    
+    getline(cin,naam);
+    cout<<naam;
+}
+
+int main() {
+    
+    cout << "enter your naam: "; 
+    namelikh(naam);             
+
+                
+
+    return 0;
+}
+{refer to basic 14}
+
+
+MINIMUM AND MAXIMUM FUNCTIONS{YOU CAN ALSO MAKE THEN WITH HELP OF VOID FUNTIONS,ALTHOUGH THEY ARE INBUILT}
+
+making maximum and minimum function
+
+#include<bits/stdc++.h>
+using namespace std;
+ void maximum(int a,int b) {
+    
+    if (a>b){
+        
+        cout<<"MAXIMUM NUMBER IS"<<a;
+    }
+    if (a<b){
+      
+      cout<<"MAXIMUM NUMBER IS"<<b;
+
+    }
+ }  
+
+int main() {
+    int a;
+    int b;
+    cout<<"ENTER YOU NUMBERS"<<endl;
+    cin>>a;
+    cin>>b;
+     maximum(a,b);
+
+     return 0;
+}
+
+SOME GOOD CODES FROM THIS VOID FUNCTION***************************
+#REFER TO BASIC 16
+
+A LIL IMPORTANT FUNCTION 
+RETURN***************
+int addNumbers(int a, int b) {
+    return a + b; // Hands the result back to main()
+}
+
+int main() {
+    // result receives the value returned by addNumbers
+    int result = addNumbers(5, 3); // result is now 8
+    
+    // You can also print the returned value directly
+    cout << addNumbers(10, 20); // Prints 30
+
+    return 0; // Signals to the Operating System that main() finished successfully
+}
+
+**********FUNCTUONS(PASS BY REFRENCE AND VAUE)***************
+#include<bits/stdc++.h>
+using namespace std;
+
+void lol(string s) {
+    s[0]='t';
+    cout<<s;
+}
+int main() {
+    string s="raj";
+    lol(s);
+    return 0;
+}
+ OUTPUT->taj
+  AND IF WE DO A LITTLE CHANGE IN CODE FOR eg
+#include<bits/stdc++.h>
+using namespace std;
+
+void lol(string s) {
+    s[0]='t';
+    cout<<s;
+}
+int main() {
+    string s="raj";
+    lol(s);
+    cout<<s<<endl; //THIS IS THE CHANGE
+    return 0;
+}
+
+OUTPUT->tajraj
+
+HERE IT IS NOT MAKING ANY CHANGE IN ORIGINAL STRING s,,IF WE WANT TO MAKE A CHANGE IN OUR ORIGINAL STRING s THEN WE HAVE TO MAKE A ONE MKRE LITTLE CHANGE IN OUR CODE
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void lol(string &s) { //THIS IS THE CHANGE.
+    s[0]='t';
+    cout<<s;
+}
+int main() {
+    string s="raj";
+    lol(s);
+    return 0;
+}
+OUTPUT->taj 
+
+# A NICE CODE IS IN BASIC17.CPP

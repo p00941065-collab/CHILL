@@ -1,0 +1,35 @@
+POWERSHELL COMMANDS--->>
+to open a drive/file/folder,,,etc->> cd
+to get back from a directory->cd ..
+to check  items inside the path->ls
+to check items inside a folder->ls file.txt
+to make a new folder->mkdir new folder
+to rename Rename-Item -Path "C:\Path\To\OldFolderName" -NewName "NewFolderName"
+
+GIT COMMANDS
+git init-> Creates an empty Git repository
+git clone-> Clone a repository into a new directory
+git add->stage a file
+git mv->Move or rename a file,a directory,or a symlink
+git commit->Record changes to the repository
+git ignore->doesnt tracks the file
+git reset hash id->removes the commit
+git rm --cached filename.txt->Removes the file from github
+
+to make a new file through terminal->New-Item names.txt
+To make a quick change in any file or code use 
+vi names.txt
+To see stuff quickly inside a file,,you can use
+cat name.txt
+git restore --staged names.txt->>>>
+git log->>>SHOWS ALL THE COMMENTS AND MODIFICATIONS AND ADDITIONS 
+{{touch newnames.txt}}
+makes a new file
+git stash->takes all messy work in a temporary stroage drawer
+git stash pop->messy work comes back
+git stash clear->messy work is clean
+
+
+
+
+

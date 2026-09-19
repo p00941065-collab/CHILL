@@ -1,0 +1,7 @@
+Text Input & Live Preview: An input field for raw Markdown and a preview area that converts it into formatted HTML.
+
+Basic Structural Tagging: Simple tags (like #cpp or #notes) attached to your notes for quick sorting.
+
+Local Data Persistence: Saving notes to localStorage so they stay in your browser when you refresh or close the tab.
+
+GitHub Pages Hosting: Deploying the static HTML/JS page directly to GitHub Pages to link on your profile.
