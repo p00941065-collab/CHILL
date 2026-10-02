@@ -1,0 +1,100 @@
+1. Basic Math Operations (Step 1.4)
+Digit Extraction / Counting Digits: O(log 
+10
+​
+ N)
+
+Dividing a number N repeatedly by 10 runs in logarithmic time relative to base 10.
+
+Reversing a Number / Palindrome Check: O(log 
+10
+​
+ N)
+
+Armstrong Number: O(log 
+10
+​
+ N)
+
+Print all Divisors:
+
+Brute Force: O(N)
+
+Optimized (looping up to  
+N
+
+​
+ ): O( 
+N
+
+​
+ )
+
+Check Prime Number: O( 
+N
+
+​
+ )
+
+GCD / HCF (Euclidean Algorithm): O(log 
+ϕ
+​
+ (min(a,b)))
+
+Typically denoted as O(log(min(a,b))) where ϕ is the golden ratio factor.
+
+2. Basic Recursion (Step 1.5)
+Print 1 to N / N to 1 recursively: O(N)
+
+Sum of first N numbers / Factorial of N: O(N)
+
+Reverse an Array recursively: O(N)
+
+String Palindrome Check recursively: O(N/2)=O(N)
+
+Multiple / Multiple Recursive Calls (e.g., Naive Fibonacci): O(2 
+N
+ )
+
+Demonstrates exponential time complexity due to the binary recursive tree structure.
+
+3. Sorting Algorithms (Step 1.2 & Step 2 Intro)
+Selection Sort: O(N 
+2
+ ) (Best, Average, Worst)
+
+Bubble Sort:
+
+Worst / Average: O(N 
+2
+ )
+
+Optimized Best Case (already sorted): O(N)
+
+Insertion Sort:
+
+Worst / Average: O(N 
+2
+ )
+
+Best Case (already sorted): O(N)
+
+4. Hashing Methods & Maps (Step 1.6)
+A. Direct Array Hashing (Number & Character Hashing)
+Storing / Fetching: O(1) constant time per query.
+
+Overall Array Hashing: O(N) time to construct the frequency array.
+
+B. C++ std::map (Ordered Map / Red-Black Tree)
+Fetch / Insert / Search: O(logN) in all cases (Best, Average, Worst).
+
+Building a Map of Size N: O(NlogN).
+
+C. C++ std::unordered_map (Unordered Map / Hash Table)
+Fetch / Insert / Search:
+
+Average Case: O(1)
+
+Best Case: O(1)
+
+Worst Case: O(N) (Occurs during severe hash collisions where all keys hash to the same bucket chain).
