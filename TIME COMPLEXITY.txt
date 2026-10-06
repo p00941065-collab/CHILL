@@ -37,9 +37,7 @@ N
  )
 
 GCD / HCF (Euclidean Algorithm): O(log 
-ϕ
-​
- (min(a,b)))
+ϕ(min(a,b)))
 
 Typically denoted as O(log(min(a,b))) where ϕ is the golden ratio factor.
 

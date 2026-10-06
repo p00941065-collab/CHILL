@@ -79,15 +79,11 @@ int main() {
         cin>>arr[i];
     }
     for(int i=0;i<=(n-1);i++) {
-        int didswap=0;
-        for(int j=0;j<=i;j++) {
-            if(arr[j]>arr[i]) {
-                swap(arr[i],arr[j]);
-               didswap=1;
-            }
-            if(didswap=0) {
-                break;
-            }
+        int j=i;
+        while(j>0 && arr[j]>arr[j+1]) {
+        swap(arr[j],arr[j+1]);
+        j--
+      
         }
     }
  for(int i=0;i<n;i++) {
@@ -97,3 +93,4 @@ return 0;
 }
 
 
+//
